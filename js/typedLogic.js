@@ -1,7 +1,7 @@
 function initType() {
 
 var typed = new Typed(document.getElementsByClassName('typed')[0], {
-    strings: ["Pikachu!!!!", "X Æ A-12",
+    strings: ["(╯°□°)╯︵ ┻━┻!!!!", "X Æ A-12",
         "(>'-')> (>'-')>(>'-')>(>'-')> (>'-')>(>'-')> (>'-')>  &#127833; &#127833; &#127833;",
         "<pre>/\\                 /\\\n" +
         "/ \\'._   (\\_/)   _.'/ \\\n" +
@@ -12,7 +12,7 @@ var typed = new Typed(document.getElementsByClassName('typed')[0], {
         "  \"  \"  </pre>",
 
 
-        "hi"],
+        "☜(⌒ ▽ ⌒)☞"],
     typeSpeed: 80,
     backSpeed: 40,
     smartBackspace: true, // this is a default
