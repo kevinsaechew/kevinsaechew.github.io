@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title>Clean Front Page</title>
+				<meta charset="utf-8">
+				<meta name="viewport" content="initial-scale=1, minimal-ui">
+			  
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+			<script src="js/typed.js"></script>
+			<script src="js/typedLogic.js"></script>
+				<link href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
+			  
+				<link rel="stylesheet" href="animate.min.css">
+				<link rel="stylesheet" href=".\style.css">
+			  </head>
+
+			  <body onload=initType() style="" >
+
+
+
+					<header class="site__header island">
+					  <div class="wrap">
+					   <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Kevin Saechew</h1></span>
+						  <span id="animationKirby" style="display: block;"><h1 class="beta subhead">
+
+				<h2> <span class="typed"></span></h2>
+
+							  <(^.^<) <(^ . ^)> (>^.^)>  </h1> </span>
+					  </div>
+					</header><!-- /.site__header -->
+					
+					<main class="site__content island" role="content">
+					  <div class="wrap">
+						<form>
+
+
+						  <button id="animationButton" class="butt js--triggerAnimation"><('-'<) (>'-')> <('-'<) (>'-') <br> Animate The Kirbys</button>
+						</form>
+						<hr>
+
+						<p><a href="../../index.html">Next Page Coming soon...</a></p>
+
+
+						  <p>Made with  <b style="color:tomato;">&hearts;</b> and <b style="color:tomato;">&#127805;</b> (bitcorn) </p>
+
+
+					  </div>
+					</main><!-- /.site__content -->
+					
+					<script>
+
+						var effects = ["bounce","flash","pulse","rubberBand","shake","swing","tada","wobble","jello","fadeIn","fadeInDown","fadeInDownBig","fadeInLeft","fadeInLeftBig","fadeInRight","fadeInRightBig","lightSpeedIn","lightSpeedOut","rotateIn","rotateInDownLeft","rotateInDownRight","zoomIn","zoomInDown","zoomInLeft","zoomInRight","zoomInUp","hinge","jackInTheBox","rollIn","rollOut"];
+						var kirbyEffects = ["bounce","flash","rubberBand","shake","swing","tada","wobble","jello","lightSpeedIn","lightSpeedOut","rotateIn","jackInTheBox"];
+
+
+						function testAnim(x, y) {
+						$('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						  $(this).removeClass();
+						});
+
+							$('#animationKirby').removeClass().addClass(y + ' animated').one(' beta subhead webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+								$(this).removeClass();
+							});
+					  };
+					
+					  $(document).ready(function(){
+						$('.js--triggerAnimation').click(function(e){
+						  e.preventDefault();
+						  var anim = effects[Math.floor(Math.random() * effects.length)];
+						  var animKirby = kirbyEffects[Math.floor(Math.random() * kirbyEffects.length)];
+						  testAnim(anim, animKirby);
+							console.log(anim);
+
+						});
+					
+						$('.js--animations').change(function(){
+						  var anim = $(this).val();
+						  var animKirby = $(this).val();
+						  testAnim(anim, animKirby);
+						  console.log(animKirby);
+						});
+					  });
+					
+					</script>
+
+
+					</body>
+
+</html>
+
+
+
